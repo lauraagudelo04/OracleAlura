@@ -1,0 +1,349 @@
+.logo__item {
+    background-repeat: no-repeat;
+    padding: 15px 65px;
+    cursor: pointer;
+}
+
+body{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+
+.cabecera__container{
+    background-color: #5300C8;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    justify-content: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.logo-img {
+    width: 80px;  /* Ajusta este valor según el tamaño que prefieras */
+    height: auto;
+}
+
+.titulo__item {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.cabecera__titulo__container{
+    display: flex;
+    width: 30%;
+    height: 90px;
+}
+
+.rodapie__container{
+    background-color: #5300C8;
+    margin-top: auto;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.logo__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: auto;
+    text-align: center;
+}
+
+.rodapie_contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+
+.rodapie__titulo {
+    font-size:16px;
+}
+
+.rodapie__texto {
+    font-family: "IBM Plex Mono", monospace;
+    line-height: 16px;
+    font-weight: 400;
+    margin: 5px 0 0;
+}
+
+/* Contenedor principal */
+.main-container {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1200px;
+    align-items: flex-start;
+}
+
+.products-section {
+    width: 600px;
+    height: 600px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.products__title {
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: "Press Start 2P", serif;
+    margin-top: 0;
+    padding: 0 10px;
+}
+
+.products__item__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: flex-start;
+    padding: 0;
+    overflow-y: auto;
+    max-height: calc(100% - 60px);
+    scrollbar-width: thin;
+    scrollbar-color: gray #f5f5f5;
+}
+
+/* Estilos para la barra de scroll */
+.products__item__container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.products__item__container::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 3px;
+}
+
+.products__item__container::-webkit-scrollbar-thumb {
+    background: #5300C8;
+    border-radius: 3px;
+}
+
+.products__item__container::-webkit-scrollbar-thumb:hover {
+    background: #4200a0;
+}
+
+.products__item {
+    background-color: #5300C8;
+    border-radius: 8px;
+    width: 165px;
+    height: 200px;
+    overflow: hidden;
+    border: 2px solid #ffffff;
+    padding: 6px;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-color: #000000;
+    box-shadow: -5px 6px 3.3px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    
+}
+
+.product__image {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #000000;
+}
+
+.descripcion-imagen {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 4px;
+    position: relative;
+}
+
+.detalles__producto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: calc(100% - 8px);
+    padding: 4px;
+    margin-bottom: 25px;
+}
+
+.producto__nombre {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.7rem;
+    margin: 0;
+    color: #ffffff;
+    height: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.producto__precio {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.8rem;
+    color: #ffffff;
+    margin: 0;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 6px;
+    left: 12px;
+}
+
+.producto__eliminar {
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 4px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    height: 24px;
+}
+
+.producto__eliminar i {
+    font-size: 1rem;
+}
+
+.producto__eliminar:hover {
+    color: #ff4444;
+}
+
+/* Formulario */
+.form__container {
+    width: 472px;
+    height: 517px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.form__group {
+    position: relative;
+    height: 58px;
+    width: 392px;
+}
+
+.form__input {
+    width: 392px;
+    height: 58px;
+    padding: 0 25px;
+    border-radius: 50px;
+    border: 2px solid #03318C;
+    background-color: white;
+    color: #03318C;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.85rem;
+    line-height: 58px;
+}
+
+.form__label {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #03318C;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.7rem;
+    pointer-events: none;
+    background-color: white;
+    padding: 0 5px;
+}
+
+.form__buttons {
+    width: 392px;
+    display: flex;
+    gap: 13px;
+    margin-top: 10px;
+}
+
+.form__button {
+    flex: 1;
+    height: 55px;
+    padding: 0 65px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__button--submit {
+    background-color: #03318C;
+    color: white;
+    border: none;
+}
+
+.form__button--reset {
+    background-color: white;
+    color: #03318C;
+    border: 2px solid #03318C;
+}
+
+.form__button--submit:hover {
+    background-color: #02255f;
+}
+
+.form__button--reset:hover {
+    background-color: rgba(3, 49, 140, 0.1);
+}
+
+/* Estilo para el input number (quitar flechas) */
+.form__input[type="number"]::-webkit-inner-spin-button,
+.form__input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form__input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.form__title {
+    color: #000000;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: "Press Start 2P", serif;
+    font-size: 1.1rem;
+    margin-top: 0;
+}
