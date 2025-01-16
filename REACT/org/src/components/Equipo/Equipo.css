@@ -1,6 +1,6 @@
 .equipo{
     width: 100%;
-    background-color: #D9F7E9;
+   position: relative;
     padding: 32px;
     box-sizing: border-box;
     text-align: center;
@@ -12,7 +12,7 @@
     color: #212121;
     border-bottom: 4px solid;
     display: inline-block;
-    border-bottom:4px solid #57C278;
+    border-bottom:4px solid ;
     padding-bottom: 8px;
 }
 
@@ -20,4 +20,16 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+.colaboradores{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.input-color{
+    position: absolute;
+    top: 20px;
+    right: 50px;
 }
